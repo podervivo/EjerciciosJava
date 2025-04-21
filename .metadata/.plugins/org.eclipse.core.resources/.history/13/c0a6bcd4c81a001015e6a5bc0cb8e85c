@@ -1,0 +1,44 @@
+package c6ej3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Empresa {
+    private String nombre;
+    private List<Empleado> empleados;
+
+    public Empresa(String nombre) {
+        this.nombre = nombre;
+        this.empleados = new ArrayList<>();
+    }
+
+    // Método para agregar empleados
+    public void agregarEmpleado(Empleado empleado) {
+        empleados.add(empleado);
+    }
+
+    // Método para calcular salario promedio
+    public double calcularSalarioPromedio() {
+        if (empleados.isEmpty()) {
+            return 0;
+        }
+
+        double suma = 0;
+        for (Empleado e : empleados) {
+            suma += e.getSalario();
+        }
+
+        return suma / empleados.size();
+    }
+
+    // Método opcional para mostrar los empleados
+    public void mostrarEmpleados() {
+        System.out.println("Empleados de la empresa " + nombre + ":");
+        for (Empleado e : empleados) {
+            System.out.println("- " + e);
+        }
+    }
+}
+
+
+

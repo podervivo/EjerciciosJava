@@ -1,0 +1,20 @@
+package c6ej3;
+
+public class Main {
+    public static void main(String[] args) {
+        Empresa miEmpresa = new Empresa("Tech Solutions");
+
+        Empresa e1 = new Empresa("Ana", 50000);
+        Empresa e2 = new Empresa("Luis", 60000);
+        Empresa e3 = new Empresa("Carla", 55000);
+
+        miEmpresa.agregarEmpleado(e1);
+        miEmpresa.agregarEmpleado(e2);
+        miEmpresa.agregarEmpleado(e3);
+
+        miEmpresa.mostrarEmpleados();
+
+        double promedio = miEmpresa.calcularSalarioPromedio();
+        System.out.println("Salario promedio: $" + promedio);
+    }
+}

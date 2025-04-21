@@ -1,0 +1,11 @@
+INDEX VERSION 1.134+/Users/emilianogarello/Desktop/code/JAVA/curso Java/.metadata/.plugins/org.eclipse.jdt.core
+2600562986.index
+3981961839.index
+2938688384.index
+804560109.index
+890176403.index
+3640651571.index
+1865797976.index
+2431686997.index
+2850294358.index
+2265762790.index
