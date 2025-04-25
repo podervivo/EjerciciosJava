@@ -1,0 +1,25 @@
+package c7ej3;
+
+public class Main {
+    public static void main(String[] args) {
+        ConsultorioMedico consultorio = new ConsultorioMedico("Salud Total", "Calle Falsa 123", "555-1234");
+
+        Paciente p1 = new Paciente("12345678", "Juan Pérez", 30);
+        Paciente p2 = new Paciente("87654321", "Ana López", 25);
+
+        Medico m1 = new Medico("11111111", "Dr. Gómez", "Pediatría");
+        Medico m2 = new Medico("22222222", "Dra. Ruiz", "Cardiología");
+
+        consultorio.agregarPaciente(p1);
+        consultorio.agregarPaciente(p2);
+        consultorio.agregarMedico(m1);
+        consultorio.agregarMedico(m2);
+
+        consultorio.registrarCita("12345678", "11111111", "2025-04-22 10:00");
+        consultorio.registrarCita("87654321", "11111111", "2025-04-23 11:00");
+        consultorio.registrarCita("12345678", "22222222", "2025-04-24 12:00");
+
+        consultorio.listarCitasPorMedico("11111111");
+    }
+}
+																				
